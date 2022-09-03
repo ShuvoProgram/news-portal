@@ -122,6 +122,3 @@ const toggleSpinner2 = isLoader => {
     }
 }
 newsCategoryApi("01");
-// news();
-// newsApi();
-// newsLink();
