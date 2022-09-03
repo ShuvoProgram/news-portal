@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://kit.fontawesome.com/7bea648afd.js" crossorigin="anonymous"></script>
+    <title>SK News Portal - Blogs</title>
+</head>
+
+<body class="mx-40">
+    <header class="p-8">
+        <nav
+            class="relative w-full flex flex-wrap items-center justify-between py-3 bg-blue-600 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+                <button
+                    class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
+                    <a class="text-xl text-white pr-2 font-semibold" href="#">SK News Portal</a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-white" href="./index.html">News</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
+                                href="#">Blogs</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="flex items-center relative">
+                    <!-- Icon -->
+                    <div class="dropdown relative">
+                        <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full"
+                                style="height: 45px; width: 45px" alt="" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
+                            aria-labelledby="dropdownMenuButton2">
+                            <li>
+                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                                    href="#">Action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                                    href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                                    href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section class="flex flex-col items-center h-96 justify-center">
+            <h1>Some ES6 Interview Questions</h1>
+            <section class="flex">
+                <div class="mx-10">
+                    <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        data-bs-toggle="collapse" href="#collapseWithScrollbar" role="button" aria-expanded="false"
+                        aria-controls="collapseWithScrollbar">
+                        What are the differences between var, let and const in JavaScript?
+                    </a>
+                    <div class="collapse mt-4 max-h-52 overflow-y-auto" id="collapseWithScrollbar"
+                        style="max-width: 700px">
+                        <p>
+                            The differences between var, let, and const variable declaration in JavaScript include:
+                            Variables declared with var and const are scoped to the immediate function body.
+                            Variables declared with the var keyword are hoisted. Hoisting means that the variable can be
+                            accessed in their enclosing scope even before they are declared.
+                            Variables declared with the let keyword are block-scoped, which means the variables will
+                            have scope to the immediate enclosing block.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-10">
+                    <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        data-bs-toggle="collapse" href="#collapseWithScrollbar2" role="button" aria-expanded="false"
+                        aria-controls="collapseWithScrollbar2">
+                        What are the differences between Arrow Function and Regular Function?
+                    </a>
+                    <div class="collapse mt-4 max-h-52 overflow-y-auto" id="collapseWithScrollbar2"
+                        style="max-width: 700px">
+                        <p>
+                            An arrow function is also known as the fat arrow function. It is a new feature introduced in
+                            ES6 that is a more concise syntax for writing function expressions.
+                            Regular functions created using function declarations or expressions are constructible and
+                            callable. Since regular functions are constructible, they can be called using the new
+                            keyword. However, the arrow functions are only callable and not constructible,
+                            For Example, arrow functions can never be used as constructor functions. Both regular
+                            JavaScript functions and arrow functions work in a similar manner but there are some
+                            differences between them.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-10">
+                    <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        data-bs-toggle="collapse" href="#collapseWithScrollbar3" role="button" aria-expanded="false"
+                        aria-controls="collapseWithScrollbar3">
+                        What are the differences between Map, forEach, Filter and find in JavaScript?
+                    </a>
+                    <div class="collapse mt-4 max-h-52 overflow-y-auto" id="collapseWithScrollbar3"
+                        style="max-width: 700px">
+                        <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                            accusamus labore sustainable VHS. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-10">
+                    <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                        data-bs-toggle="collapse" href="#collapseWithScrollbar4" role="button" aria-expanded="false"
+                        aria-controls="collapseWithScrollbar4">
+                        Why should we use Template string in javaScript?
+                    </a>
+                    <div class="collapse mt-4 max-h-52 overflow-y-auto" id="collapseWithScrollbar4"
+                        style="max-width: 700px">
+                        <p>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                            accusamus labore sustainable VHS. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                            put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

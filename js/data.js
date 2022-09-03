@@ -16,9 +16,9 @@ const newCategory = (categories) => {
     }
     categories.forEach(category => {
         const li =document.createElement("li");
-        li.classList.add('p-4');
+        li.classList.add('nav-item', "px-2");
         li.innerHTML = `
-        <a href="#" onclick= "newsLink('${category.category_id}')">${category.category_name ? category.category_name : "Data Not Found"}</a>`;
+        <a class="nav-link text-lg font-medium text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#" onclick= "newsLink('${category.category_id}')">${category.category_name ? category.category_name : "Data Not Found"}</a>`
         menu.appendChild(li);
     })
     toggleSpinner(true);
@@ -37,16 +37,17 @@ const newsDetails = details => {
     mainContainer.textContent = '';
     details.map(newsData => {
         const div = document.createElement("div");
-        div.classList.add("flex", "box-border", "shadow-lg", "m-4");
+        // div.classList.add("flex", "box-border", "shadow-lg", "m-4");
+        div.classList.add('flex','p-4');
         div.innerHTML = `
-    <div class="h-10">
-                    <img class="w-96" src="${newsData.image_url}" class="border-box" alt="">
-                </div>
-                <div class="p-4">
-                    <p class="text-xl font-medium py-2">${newsData.title ? newsData.title : "Not Found"}</p>
-                    <p class="py-2">${newsData.details ? newsData.details.slice(0, 400) : "Not Found"}...</p>
-                    <div class="flex justify-between">
-                        <div class="flex">
+        <div class="flex flex-col md:flex-row p-5 rounded-lg bg-white shadow-lg">
+                <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                    src="${newsData.image_url}" alt="" />
+                <div class="p-6 flex flex-col justify-start">
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">${newsData.title ? newsData.title : "Not Found"}</h5>
+                    <p class="text-gray-700 text-base mb-4">${newsData.details ? newsData.details.slice(0, 400) : "Not Found"}...</p>
+                    <div class="flex justify-between flex-col md:flex-col">
+                        <div class="flex flex-col md:flex-col">
                             <div class="px-3">
                                 <img src="${newsData.author ? newsData.author.img : "Not Found"}" class="w-12 rounded-2xl" alt="">
                             </div>
@@ -55,7 +56,8 @@ const newsDetails = details => {
                                 <p>${newsData.author.published_date ? newsData.author.published_date : "Not Found"}</p>
                             </div>
                         </div>
-                        <div>
+                        <div class = "flex">
+                        <div class = "px-2">
                             <i class="fa-regular fa-eye"></i>
                             <span>${newsData.total_view ? newsData.total_view : "Not Found"}</span>
                         </div>
@@ -63,10 +65,13 @@ const newsDetails = details => {
                             <span>${newsData.rating.number ? newsData.rating.number : "Not Found"}</span>
                             <i class="fa-regular fa-star"></i>
                         </div>
-                        <div class="px-6 py-2.5  bg-blue-600  text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:bg-blue-700 hover:shadow-lg  focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0  active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="news('${newsData._id}')">
+                        </div>
+                        <div class="px-6 w-14 py-2.5  bg-blue-600  text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:bg-blue-700 hover:shadow-lg  focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0  active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="news('${newsData._id}')">
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
+                </div>
+            </div>
     `;
         mainContainer.appendChild(div)
     })
@@ -121,4 +126,5 @@ const toggleSpinner2 = isLoader => {
         loader.classList.add("hidden")
     }
 }
-newsCategoryApi("01");
+newsCategoryApi();
+newsLink('08');
