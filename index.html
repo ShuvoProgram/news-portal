@@ -5,216 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7bea648afd.js" crossorigin="anonymous"></script>
-    <title>Sk News Portal</title>
+    <title>UK News Hunter</title>
 </head>
 
-<body class="mx-40">
-    <header class="p-8">
-        <nav
-            class="relative w-full flex flex-wrap items-center justify-between py-3 bg-blue-600 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-                <button
-                    class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path fill="currentColor"
-                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-                        </path>
-                    </svg>
+<body class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold" href="#"><span class="text-white bg-warning p-2 rounded-3">UK
+                        News</span> Hunter</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
-                    <a class="text-xl text-white pr-2 font-semibold" href="#">SK News Portal</a>
-                    <!-- Left links -->
-                    <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
-                        <li class="nav-item p-2">
-                            <a class="nav-link text-white" href="#">News</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">News</a>
                         </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0"
-                                href="./blogs.html">Blogs</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blogs.html">Blogs</a>
                         </li>
                     </ul>
-                    <!-- Left links -->
                 </div>
-                <!-- Collapsible wrapper -->
-
-                <!-- Right elements -->
-                <div class="flex items-center relative">
-                    <!-- Icon -->
-                    <div class="dropdown relative">
-                        <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full"
-                                style="height: 45px; width: 45px" alt="" loading="lazy" />
-                        </a>
-                        <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
-                            aria-labelledby="dropdownMenuButton2">
-                            <li>
-                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                                    href="#">Action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                                    href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                                    href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Right elements -->
             </div>
         </nav>
     </header>
     <hr>
     <main>
-        <!-- news category -->
-        <section class="flex">
-            <div class="relative flex flex-wrap items-center justify-between py-4  text-gray-500  hover:text-gray-700  focus:text-gray-700 navbar navbar-expand-lg navbar-light w-full mx-52">
-                <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-<button class="
-    navbar-toggler
-    text-gray-500
-    border-0
-    hover:shadow-none hover:no-underline
-    py-2
-    px-2.5
-    bg-transparent
-    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
-  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-  class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-  <path fill="currentColor"
-    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-  </path>
-</svg>
-</button>
-<div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-<!-- Left links -->
-<ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto" id="menu">
+        <!-- category news -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- news number -->
+        <section class="my-4">
+            <div class="bg-primary text-white d-flex px-4 fs-4">
+                <span class="px-2" id="category-lenght"></span>
+                <p>items found for category</p><span class="px-2" id="category"></span>
+            </div>
+        </section>
+        <!-- sort items -->
+        <section class="d-flex">
+            <span class="px-3 fs-4">Sort By View</span>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">Default</button></li>
+                    <li><button class="dropdown-item" type="button" id="high">Highest View To Lowest View</button></li>
+                    <li><button class="dropdown-item" type="button" id="low">Lowest View To Highest View</button></li>
+                </ul>
+            </div>
+        </section>
+        <!-- warning msg -->
+        <section class="w-100 p-5 bg-warning mt-5" id="warning">
+            <div class="d-flex fs-2 d-none">
+                <div class="px-3"><i class="fa-solid fa-circle-exclamation"></i></div>
+                <div class="">Not Found Page's</div>
+            </div>
+        </section>
+        <!-- news list -->
+        <section class="mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="mb-3 container" id="display-news">
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- modal -->
+        <section>
 
-</ul>
-<!-- Left links -->
-</div>
-<!-- Collapsible wrapper -->
-</div>
-            </div>
-        </section>
-        <section>
-            <div id="warning" class="mt-4">
-                <h2 class="text-3xl text-yellow-400 text-center">Display Not Found Item's</h2>
-            </div>
-        </section>
-        <!-- items filter -->
-        <section class="my-5">
-            <div class="p-4 bg-blue-500 ">
-                <h1 class="text-white text-lg">4 items found for category Entertainment</h1>
-            </div>
-        </section>
-        <!-- sorting -->
-        <section class="flex justify-between flex-col ">
-            <div class="flex py-4">
-                <h1 class="text-xl px-1 font-medium">Sort By View: </h1>
-                <div id="dropdown-wrapper" class="inline-block">
-                    <button onclick="toggleMenu()"
-                        class="px-5 py-2 bg-amber-500 hover:bg-amber-600 focus:bg-rose-500 text-white">
-                        Toggle Menu</button>
-                    <div id="menuDrop" class="hidden flex flex-col bg-white drop-shadow-md">
-                        <a class="px-5 py-2 hover:bg-amber-300 border-b border-gray-200" href="#">About
-                            KindaCode.com</a>
-                        <a class="px-5 py-2 hover:bg-amber-300 border-b border-gray-200" href="#">Contact Us</a>
-                        <a class="px-5 py-2 hover:bg-amber-300 border-b border-gray-200" href="#">Privacy Policy</a>
-                        <a class="px-5 py-2 hover:bg-amber-300" href="#">Hello There</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <a href="#" class="p-3 bg-blue-600 text-white rounded-lg">Today's Pick</a>
-                <a href="#"
-                    class="p-3 bg-blue-600 text-white rounded-lg visited:bg-white bg-purple-600 border-blue-700 text-blue-700">Tranding</a>
-            </div>
-        </section>
-        <!-- news box -->
-        <section class=" p-6" id="display-news">
-            
-        </section>
-        <!-- Modal -->
-        <section>
-            <div class="modal fade fixed top-0 mx-52 hidden w-6/12 h-full outline-none overflow-x-hidden overflow-y-hidden"
-                id="exampleModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-                <div class="modal-dialog relative w-auto pointer-events-none">
-                    <div
-                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
-                        <div
-                            class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
-                            <h5 class="text-xl font-medium leading-normal text-gray-800" id="modalTitle">Modal title
-                            </h5>
-                            <button type="button"
-                                class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
-                                data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body relative p-4" id="modal-body">
-                            Modal body text goes here.
+                        <div class="modal-body" id="modal-body-news">
+                            ...
                         </div>
-                        <div
-                            class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
-                            <button type="button" class="px-6
-          py-2.5
-          bg-purple-600
-          text-white
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          rounded
-          shadow-md
-          hover:bg-purple-700 hover:shadow-lg
-          focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-purple-800 active:shadow-lg
-          transition
-          duration-150
-          ease-in-out" data-bs-dismiss="modal">Close</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- spinner -->
-        <section id="loader" class="hidden">
-            <div class="flex items-center justify-center">
-                <div class="text-green-500 spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full m-12"
-                    role="status">
-                    <span class="visually-hidden">....</span>
-                </div>
-            </div>
+        <!-- loading -->
+        <section id="loader" class="d-none">
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>
+            </button>
+            <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
         </section>
     </main>
-
 </body>
-<footer class="inset-y-3">
-    <section>
-        <div class="text-center">
-            Copyright@2022 SK News Portal
-        </div>
-    </section>
-</footer>
-<!-- script -->
-<script src="./js/data.js"></script>
-<script src="./js/dropdown.js"></script>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script src="./js/data.js"></script>
 
 </html>
