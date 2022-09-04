@@ -44,11 +44,12 @@ const newsDetails = (details, name) => {
     } else {
         warning.classList.add("d-none")
     }
+    details.sort((a, b) => b.total_view - a.total_view);
     // console.log(details);
-    const highView = document.getElementById("high").addEventListener("click", function () {
-        details.sort((a, b) => b.total_view - a.total_view);
-    })
-    console.log(highView)
+    // const highView = document.getElementById("high").addEventListener("click", function () {
+    //     details.sort((a, b) => b.total_view - a.total_view);
+    // })
+    // console.log(highView)
     const items = document.getElementById("category-lenght");
     items.innerText = details.length;
     // console.log(name);
@@ -58,7 +59,7 @@ const newsDetails = (details, name) => {
     mainContainer.textContent = '';
     details.map(newsData => {
         const div = document.createElement("div");
-        div.classList.add("col");
+        div.classList.add("col", "my-4");
         div.innerHTML = `
         <div class="card">
                         <img src="${newsData.image_url}" class="card-img-top" alt="...">
